@@ -1,0 +1,19 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/clog.js"
+  ],
+  "all": true,
+  "extension": [
+    ".js"
+  ],
+  "reporter": [
+    "html",
+    "text-summary"
+  ],
+  "cache": true,
+  "tempDirectory": "./coverage/.nyc_output",
+  "report-dir": "./coverage"
+}

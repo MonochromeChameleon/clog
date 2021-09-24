@@ -1,0 +1,57 @@
+{
+  "name": "@monochromechameleon/clog",
+  "description": "Consistent changelog edit utility",
+  "version": "0.0.1",
+  "author": "Hugh Greenish @MonochromeChameleon",
+  "bin": {
+    "clog": "./bin/run"
+  },
+  "bugs": "https://github.com/MonochromeChameleon/clog/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "inquirer": "^8.1.5",
+    "prettier": "^2.4.1",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "globby": "^10",
+    "mocha": "^5",
+    "mock-stdin": "^1.0.0",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/MonochromeChameleon/clog",
+  "keywords": ["changelog"],
+  "license": "MIT",
+  "main": "src/clog.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "clog",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "MonochromeChameleon/clog",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
