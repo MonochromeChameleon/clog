@@ -19,7 +19,7 @@ $ npm install -g @monochromechameleon/clog
 $ clog COMMAND
 running command...
 $ clog (-v|--version|version)
-@monochromechameleon/clog/0.0.0 darwin-x64 node-v16.8.0
+@monochromechameleon/clog/0.0.2 darwin-x64 node-v16.8.0
 $ clog --help [COMMAND]
 USAGE
   $ clog COMMAND
@@ -44,19 +44,9 @@ Note unreleased changes in your changelog file
 ```
 USAGE
   $ clog
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/index.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/index.js)_
+_See code: [src/commands/index.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/index.js)_
 
 ## `clog add`
 
@@ -65,19 +55,9 @@ Note unreleased additions in your changelog file
 ```
 USAGE
   $ clog add
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/add.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/add.js)_
+_See code: [src/commands/add.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/add.js)_
 
 ## `clog change`
 
@@ -86,19 +66,9 @@ Note unreleased changes in your changelog file
 ```
 USAGE
   $ clog change
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/change.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/change.js)_
+_See code: [src/commands/change.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/change.js)_
 
 ## `clog help [COMMAND]`
 
@@ -124,19 +94,9 @@ Create a new changelog file
 ```
 USAGE
   $ clog init
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/init.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/init.js)_
+_See code: [src/commands/init.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/init.js)_
 
 ## `clog reformat`
 
@@ -145,19 +105,9 @@ Reformat the changelog
 ```
 USAGE
   $ clog reformat
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/reformat.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/reformat.js)_
+_See code: [src/commands/reformat.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/reformat.js)_
 
 ## `clog release SEMVER`
 
@@ -169,19 +119,9 @@ USAGE
 
 ARGUMENTS
   SEMVER  (major|minor|patch) the semver level to increment the release by
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/release.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/release.js)_
+_See code: [src/commands/release.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/release.js)_
 
 ## `clog remove`
 
@@ -190,17 +130,7 @@ Note unreleased removals in your changelog file
 ```
 USAGE
   $ clog remove
-
-OPTIONS
-  --directory=directory  [default: cwd] The directory in which to look for the
-                         changelog file
-
-  --file=file            [default: CHANGELOG.md] The name of the changelog file
-
-  --url=url              The project homepage
-
-  --[no-]write           Whether or not to overwrite the changelog file
 ```
 
-_See code: [src/commands/remove.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.0/src/commands/remove.js)_
+_See code: [src/commands/remove.js](https://github.com/MonochromeChameleon/clog/blob/v0.0.2/src/commands/remove.js)_
 <!-- commandsstop -->
